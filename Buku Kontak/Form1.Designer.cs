@@ -34,8 +34,13 @@
             lblFile = new Label();
             label1 = new Label();
             panel2 = new Panel();
-            lblNama = new Label();
             textBox1 = new TextBox();
+            lblNama = new Label();
+            textBox2 = new TextBox();
+            label2 = new Label();
+            label3 = new Label();
+            comboBox1 = new ComboBox();
+            button1 = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
@@ -98,6 +103,11 @@
             // 
             panel2.BackColor = Color.White;
             panel2.BorderStyle = BorderStyle.FixedSingle;
+            panel2.Controls.Add(button1);
+            panel2.Controls.Add(comboBox1);
+            panel2.Controls.Add(label3);
+            panel2.Controls.Add(textBox2);
+            panel2.Controls.Add(label2);
             panel2.Controls.Add(textBox1);
             panel2.Controls.Add(lblNama);
             panel2.Controls.Add(label1);
@@ -106,23 +116,72 @@
             panel2.Size = new Size(490, 537);
             panel2.TabIndex = 2;
             // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(40, 141);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(403, 31);
+            textBox1.TabIndex = 4;
+            // 
             // lblNama
             // 
             lblNama.AutoSize = true;
             lblNama.Font = new Font("Cambria", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblNama.ForeColor = Color.DimGray;
-            lblNama.Location = new Point(40, 83);
+            lblNama.Location = new Point(40, 92);
             lblNama.Name = "lblNama";
             lblNama.Size = new Size(165, 28);
             lblNama.TabIndex = 3;
             lblNama.Text = "Nama Lengkap";
             // 
-            // textBox1
+            // textBox2
             // 
-            textBox1.Location = new Point(40, 132);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(403, 31);
-            textBox1.TabIndex = 4;
+            textBox2.Location = new Point(40, 249);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(403, 31);
+            textBox2.TabIndex = 6;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Cambria", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.DimGray;
+            label2.Location = new Point(40, 200);
+            label2.Name = "label2";
+            label2.Size = new Size(75, 28);
+            label2.TabIndex = 5;
+            label2.Text = "No Hp";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Cambria", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.DimGray;
+            label3.Location = new Point(40, 309);
+            label3.Name = "label3";
+            label3.Size = new Size(101, 28);
+            label3.TabIndex = 7;
+            label3.Text = "Kategori";
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(40, 358);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(403, 33);
+            comboBox1.TabIndex = 9;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.ForestGreen;
+            button1.Font = new Font("Candara", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(40, 432);
+            button1.Name = "button1";
+            button1.Size = new Size(403, 51);
+            button1.TabIndex = 10;
+            button1.Text = "Simpan";
+            button1.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -152,5 +211,10 @@
         private Panel panel2;
         private TextBox textBox1;
         private Label lblNama;
+        private Button button1;
+        private ComboBox comboBox1;
+        private Label label3;
+        private TextBox textBox2;
+        private Label label2;
     }
 }
